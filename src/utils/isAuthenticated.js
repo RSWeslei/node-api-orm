@@ -7,7 +7,7 @@ export const isAuthenticated = async (req, res, next) => {
     });
   } else {
     const { apiKey } = req.query;
-    if (apiKey === '123546FGFG4567DSDF4646F') {
+    if (apiKey === 'senha') {
       return next();
     } else {
       return res.status(401).send({
